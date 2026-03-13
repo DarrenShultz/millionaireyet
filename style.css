@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+#net-worth-form {
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+
+.input-group:focus-within {
+    border-color: #4a90d9;
+}
+
+.dollar-sign {
+    padding: 0.75rem 0 0.75rem 1rem;
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 600;
+}
+
+#net-worth {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.75rem 0.5rem;
+    font-size: 1.1rem;
+    background: transparent;
+}
+
+button[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    background: #4a90d9;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #357abd;
+}
+
+.banner {
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.check-btn {
+    margin-left: 0.75rem;
+    padding: 0.4rem 1rem;
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.check-btn:hover {
+    background: #1b5e20;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background: #fafafa;
+}
+
+th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #888;
+    border-bottom: 2px solid #eee;
+}
+
+td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+th:first-child,
+td:first-child {
+    text-align: center;
+    width: 3rem;
+}
+
+th:last-child,
+td:last-child {
+    text-align: right;
+}
+
+tr.highlight {
+    background: #e8f5e9;
+    font-weight: 600;
+}
+
+tr.highlight td {
+    border-bottom-color: #c8e6c9;
+}
+
+tr.above-million {
+    color: #999;
+}
