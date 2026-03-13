@@ -177,9 +177,22 @@ function displayResults(netWorth, rates) {
         const value = document.createElement("td");
         value.textContent = formatCurrency(currency.converted, currency.code);
 
+        const action = document.createElement("td");
+        if (isHighlightRow) {
+            const tryAgainBtn = document.createElement("button");
+            tryAgainBtn.textContent = "Try Again";
+            tryAgainBtn.className = "try-again-btn";
+            tryAgainBtn.onclick = function() {
+                document.getElementById("net-worth-form").scrollIntoView({ behavior: "smooth", block: "start" });
+                document.getElementById("net-worth").select();
+            };
+            action.appendChild(tryAgainBtn);
+        }
+
         row.appendChild(rank);
         row.appendChild(name);
         row.appendChild(value);
+        row.appendChild(action);
         tbody.appendChild(row);
     });
 
